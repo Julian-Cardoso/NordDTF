@@ -53,7 +53,7 @@ export default function Header() {
   const handleMenuLinkClick = useCallback(() => setMenuOpen(false), []);
 
   return (
-    <header className="bg-white flex items-center p-10 w-full relative z-50">
+    <header className="bg-white dark:bg-neutral-900 flex items-center p-10 w-full relative z-50">
       {/* Logo */}
       <a href="#Inicio" tabIndex={0} aria-label="Ir para o início">
         <Image
@@ -68,21 +68,24 @@ export default function Header() {
 
       {/* Menu Desktop */}
       <nav
-        className="hidden md:flex items-center justify-end w-full gap-8 ml-8"
+        className="hidden md:flex items-center justify-end w-full gap-8 ml-8 relative"
         aria-label="Menu principal"
       >
         {sections.map((id) => (
           <a
             key={id}
             href={`#${id}`}
-            className={`pb-1 transition-colors ${
+            className={`pb-1 transition-colors relative ${
               activeSection === id
-                ? "text-yellow-600 text-lg font-semibold"
-                : "text-black text-lg font-semibold"
+                ? "text-primary text-lg font-semibold"
+                : "text-black dark:text-white text-lg font-semibold"
             }`}
             aria-current={activeSection === id ? "page" : undefined}
           >
             {id.charAt(0).toUpperCase() + id.slice(1)}
+            {activeSection === id && (
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary"></span>
+            )}
           </a>
         ))}
       </nav>
@@ -96,7 +99,7 @@ export default function Header() {
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           type="button"
-          className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-yellow-600"
+          className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
         >
           {menuOpen ? (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -120,7 +123,7 @@ export default function Header() {
           <nav
             id="mobile-menu"
             ref={menuRef}
-            className="flex flex-row items-center justify-center bg-white border-radius-lg shadow-lg p-4 absolute right-0 top-full mt-2"
+            className="flex flex-row items-center justify-center bg-white dark:bg-neutral-900 border-radius-lg shadow-lg p-4 absolute right-0 top-full mt-2"
             aria-label="Menu mobile"
           >
             {sections.map((id) => (
@@ -128,7 +131,9 @@ export default function Header() {
                 key={id}
                 href={`#${id}`}
                 className={`text-base font-semibold whitespace-nowrap px-2 py-1 rounded transition-colors ${
-                  activeSection === id ? "text-yellow-600" : "text-black"
+                  activeSection === id
+                    ? "text-primary"
+                    : "text-black dark:text-white"
                 }`}
                 aria-current={activeSection === id ? "page" : undefined}
                 onClick={handleMenuLinkClick}
