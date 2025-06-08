@@ -8,10 +8,10 @@ export default function Inicio() {
     >
       <div className="flex flex-col max-w-md text-center md:text-left">
         <h1 className="text-4xl font-bold text-black dark:text-white">
-          Bem-vindo a <span className="text-primary text-4xl">NordDTF</span>
+          Bem-vindo a <span className="text-amber-500 text-4xl">NordDTF</span>
         </h1>
         <h3 className="text-black dark:text-neutral-300 text-lg">
-          Da força do <span className="text-primary">Nordeste</span>, a
+          Da força do <span className="text-amber-500">Nordeste</span>, a
           impressão do seu sucesso!
         </h3>
         <p className="text-neutral-900 dark:text-neutral-400 mt-4">
@@ -25,7 +25,7 @@ export default function Inicio() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="group bg-primary text-white px-6 py-4 rounded-full font-bold shadow-lg transition-transform duration-300 mt-10 hover:scale-105">
+          <button className="group bg-amber-500 text-white px-6 py-4 rounded-full font-bold shadow-lg transition-transform duration-300 mt-10 hover:scale-105">
             <span className="transition-opacity duration-300 group-hover:opacity-90">
               Solicite um orçamento
             </span>
@@ -36,7 +36,7 @@ export default function Inicio() {
       {/* Imagem com responsividade real */}
       <div className="relative flex items-center justify-center w-full md:w-auto">
         <div
-          className="absolute z-0 rounded-full bg-gradient-to-r from-primary-light to-primary 
+          className="absolute z-0 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 
           w-[80%] max-w-[300px] aspect-square md:w-[300px] md:h-[300px]"
         />
         <div className="relative z-10 w-[80%] max-w-[300px] aspect-square md:w-[300px] md:h-[300px]">

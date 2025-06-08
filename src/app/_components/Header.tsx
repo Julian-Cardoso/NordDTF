@@ -77,14 +77,14 @@ export default function Header() {
             href={`#${id}`}
             className={`pb-1 transition-colors relative ${
               activeSection === id
-                ? "text-primary text-lg font-semibold"
+                ? "text-amber-500 text-lg font-semibold"
                 : "text-black dark:text-white text-lg font-semibold"
             }`}
             aria-current={activeSection === id ? "page" : undefined}
           >
             {id.charAt(0).toUpperCase() + id.slice(1)}
             {activeSection === id && (
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary"></span>
+              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-amber-500"></span>
             )}
           </a>
         ))}
@@ -99,7 +99,7 @@ export default function Header() {
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           type="button"
-          className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+          className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-amber-500"
         >
           {menuOpen ? (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -132,7 +132,7 @@ export default function Header() {
                 href={`#${id}`}
                 className={`text-base font-semibold whitespace-nowrap px-2 py-1 rounded transition-colors ${
                   activeSection === id
-                    ? "text-primary"
+                    ? "text-amber-500"
                     : "text-black dark:text-white"
                 }`}
                 aria-current={activeSection === id ? "page" : undefined}
