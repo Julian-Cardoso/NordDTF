@@ -20,17 +20,16 @@ export default function Inicio() {
           equipe dedicada e tecnologia de ponta, garantimos resultados
           excepcionais em cada projeto.
         </p>
-        <a
-          href="https://api.whatsapp.com/send/?phone=558899866419&text&type=phone_number&app_absent=0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="group bg-amber-500 text-white px-6 py-4 rounded-full font-bold shadow-lg transition-transform duration-300 mt-10 hover:scale-105">
-            <span className="transition-opacity duration-300 group-hover:opacity-90">
-              Solicite um orçamento
-            </span>
-          </button>
-        </a>
+        <button className="group w-full max-w-64 bg-amber-500 text-white px-6 py-4 rounded-full font-bold shadow-lg transition-transform duration-300 mt-10 hover:scale-105 mx-auto md:mx-0">
+          <a
+            href="https://api.whatsapp.com/send/?phone=558899866419&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity duration-300 group-hover:opacity-90 block text-center"
+          >
+            Solicite um orçamento
+          </a>
+        </button>
       </div>
 
       {/* Imagem com responsividade real */}
