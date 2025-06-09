@@ -117,7 +117,8 @@ export default function Header() {
       <button
         onClick={toggleDarkMode}
         aria-label="Alternar modo escuro"
-        className="ml-4 p-2 rounded-full bg-neutral-200 dark:bg-neutral-700 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-500"
+        className="ml-4 p-2 rounded-full bg-neutral-200 dark:bg-neutral-700 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer"
+        type="button"
       >
         <div className="transition-all duration-300">
           {darkMode ? (
