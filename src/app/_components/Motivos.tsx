@@ -23,7 +23,7 @@ export default function Motivos() {
             >
               <div className="relative w-10 h-10 mb-2">
                 <Image
-                  src={`/${item.icon}`}
+                  src={`/icons/${item.icon}`}
                   alt={item.text}
                   fill
                   className="object-contain"

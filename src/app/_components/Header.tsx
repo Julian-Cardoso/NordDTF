@@ -70,7 +70,7 @@ export default function Header() {
       <a href="#Inicio" tabIndex={0} aria-label="Ir para o início">
         {darkMode ? (
           <Image
-            src="/Logo-Branca.png"
+            src="/logos/Logo-Branca.png"
             alt="Logo NordDTF"
             width={120}
             height={120}
@@ -79,7 +79,7 @@ export default function Header() {
           />
         ) : (
           <Image
-            src="/Logo-Comum.png"
+            src="/logos/Logo-Comum.png"
             alt="Logo NordDTF"
             width={120}
             height={120}
@@ -124,7 +124,7 @@ export default function Header() {
           {darkMode ? (
             // Ícone de sol estilizado
             <Image
-              src="/sun.svg"
+              src="/icons/sun.svg"
               alt="Ícone de sol"
               width={24}
               height={24}
@@ -133,7 +133,7 @@ export default function Header() {
           ) : (
             // Ícone de lua estilizado
             <Image
-              src="/moon.svg"
+              src="/icons/moon.svg"
               alt="Ícone de lua"
               width={24}
               height={24}
