@@ -40,7 +40,7 @@ export default function Inicio() {
         />
         <div className="relative z-10 w-[80%] max-w-[300px] aspect-square md:w-[300px] md:h-[300px]">
           <Image
-            src="/maquinaDtf.svg"
+            src="/icons/maquinaDtf.svg"
             alt="Máquina DTF"
             fill
             className="object-contain"

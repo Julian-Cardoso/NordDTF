@@ -4,7 +4,12 @@ export default function Footer() {
   return (
     <section>
       <div className="flex flex-col md:flex-row items-center justify-around p-8 bg-neutral-900 text-white gap-10">
-        <Image src="/Logo-Branca.png" alt="Logo" width={200} height={200} />
+        <Image
+          src="/logos/Logo-Branca.png"
+          alt="Logo"
+          width={200}
+          height={200}
+        />
         <div className="flex flex-col gap-2">
           <div className="flex flex-row gap-2 mb-2 text-white">
             <a
